@@ -1,0 +1,530 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height:1.5;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+/* General */
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap
+{
+    flex-wrap: wrap;
+}
+.padding
+{
+	padding: 90px 0;
+}
+.heading
+{
+	font-size: 32px;
+	font-weight: 700;
+	text-decoration-line: underline;
+}
+.text
+{
+    /* color: #777; */
+    font-size: 16px;
+    /* margin-bottom: 24px; */
+	text-transform: uppercase;
+    font-weight: 500;
+}
+/* header */
+.hero
+{
+   background-image: url(../media/banner.jpg) ;
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   
+}
+.social-nav
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 0;
+}
+.social-nav a
+{	
+text-decoration: none;
+margin: 10px;
+font-size: 23px;
+background-color: #f5f6fa;
+height: 50px;
+width: 50px;
+border-radius: 50px;
+line-height: 50px;
+box-shadow: 1px 4px 2px 2px #dcdde1;
+text-align: center;
+}
+.header-bac
+{
+	background-color: #ecf0f1;
+	position: sticky;
+    top: 0;
+}
+.header-bac a{
+	text-decoration: none;
+}
+.brand img{
+	width: 130px;
+	margin-left: -32px;
+}
+
+.brand .heading-h
+{
+	font-size: 32px;
+    padding: 25px;
+    color: #e74c3c;
+    font-weight: 834;
+}
+.header-nav a{
+	text-decoration: none;
+    font-size: 17px;
+    color: #34495e;
+    font-weight: 700;
+	margin-left: 41px;
+}
+.header-nav .active
+{
+	color:#e74c3c;
+	border-top: 3px solid #e74c3c;
+    padding-top: 49px;
+}
+/* content */
+.content
+{
+	padding: 120px 0;
+	text-align: center;
+}
+.content h1{
+	font-size: 55px;
+	color: #ffffff;
+	font-weight: 700;
+}
+.content p{
+	font-size: 32px;
+	padding: 10px 0;
+	color: #ffffff;
+	font-weight: 700;
+}
+.btn{
+	cursor: pointer;
+display: inline-block;
+padding: 10px 30px;
+background-color: #e74c3c;
+color: #fff;
+text-decoration: none;
+font-size: 17px;
+font-weight: 700;
+margin-top: 10px;
+}
+hr
+{
+	color: #ffffff;
+	width: 404px;
+}
+/* circular dot */
+.circle-dot
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+.dot
+{
+	height: 15px;
+    width: 15px;
+    background-color: #7f8c8d;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 1px;
+    margin: 10px 10px;
+}
+/* main */
+/* servises */
+.section-header
+{
+    margin-bottom: 48px;
+    text-align: center;
+}
+.section-header h3
+{
+    font-size: 32px;
+    margin-bottom: 12px;
+	text-transform: uppercase;
+   
+}
+.section-header p
+{
+    font-size: 23px;
+    font-weight: 500;
+}
+.servises-img
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.col-1-3
+{
+	/* flex: 0 1 30%; */
+	margin: 0 10px;
+	width: 100%;
+	height: 300px;
+	background-color: aquamarine;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.file
+{
+	background-color: #1abc9c;
+}
+.telegram
+{
+	background-color: #e67e22;
+}
+.university
+{
+	background-color: #3498db;
+}
+.lab
+{
+	background-color: #2ecc71;
+}
+/* portfolio */
+.portfolio-img 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.col-1-4{
+    flex: 0 1 21%;
+    margin: 16px 10px;
+}
+.portfolio img
+{
+	width: 100%;
+    border-radius: 8px;
+    border: 3px solid #22396a;
+    height: 378px;
+    object-fit: cover;
+}
+/* team */
+.team-img
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.col-team
+{
+	/* margin: 10px; */
+	margin-left: 70px;
+}
+.team img{
+	width: 100%;
+	border-radius: 50%;
+}
+/* design */
+
+.design h4
+{
+	font-size: 30px;
+    font-weight: 400;
+}
+.design p{
+	font-size: 23px;
+	font-weight: 300;
+	color: grey;
+}
+.col-1-2{
+    /* width: 48%; */
+	flex: 0 1 40%;
+}
+.design .flex
+{
+	align-items: flex-start;
+}
+.design .article-text{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #676767;
+	margin: 10px;
+}
+/* article */
+
+/* skillbar */
+.skills-container
+{
+	width: 100%;
+  background-color: #ddd;
+  margin: 11px 0;
+}
+
+.skills {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	padding-left: 21px;
+    font-weight: 700;
+  }
+.photoshop
+{
+	width: 90%;
+	background-color: #e74c3c;
+}
+.html
+{
+	width: 80%;
+	background-color: #e74c3c;
+}
+  
+.development
+{
+	width: 70%;
+	background-color: #e74c3c;
+}
+  
+.marketing
+{
+	width: 80%;
+	background-color: #e74c3c;
+}
+.design strong{
+	color: #e74c3c;
+	font-weight: 700;
+}
+.article2
+{
+	margin-top: 37px;
+}
+/* col-1-2 */
+.col-1-2 .tmp1{
+	color: #e74c3c;
+	font-weight: 700;
+}
+.col-1-2 .tmp2{
+	color:#34495e;
+	font-weight: 700;
+}
+.article-txt
+{
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+}
+.contact
+{
+	margin-top: 25px;
+}
+.contact strong{
+	color: #e74c3c;
+	font-weight: 700;
+}
+/* form */
+.form
+{
+	margin: 20px 0;
+}
+.form  input
+{
+	width: 100%;
+    padding: 13px 8px;
+}
+.form .btn-text{
+	width: 100%;
+}
+/* footer */
+.footer
+{
+    background-color:#22396a;
+    padding: 32px 0;
+    color:#bcc1d2;
+    font-size: 20px;
+}
+.footer a
+{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* gallery */
+.sidebar
+{
+	background-color: #e74c3c;
+	/* flex: 0 1 35%; */
+	flex: 0 1 30%;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+	
+}
+.article
+{
+	/* flex: 0 1 60%; */
+	flex: 0 1 64%;
+	overflow: auto;
+    height: 100vh;
+}
+.asidecontent{
+	margin-top: 420px;
+}
+.brand
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	/* margin-right: 154px; */
+	margin-right: 85px;
+}
+.header a{
+	text-decoration: none;
+}
+
+.brand img{
+	width: 100%;
+}
+.brand .brand-h{
+	font-size: 60px;
+    color: #fff;
+    margin: ;
+    padding: 18px;
+    font-weight: 700;
+}
+.nav{
+	margin-right: 129px;
+font-size: 24px;
+color: #fff;
+border: 1px solid white;
+padding: 5px;
+border-radius: 5px;
+}
+.nav a{
+	text-decoration: none;
+	color: #fff;
+}
+.sidebar .heading{
+		text-decoration: none;
+		color: #fff;
+		padding: 10px;
+}
+.sidebar .text{
+    padding: 10px;
+    font-weight: 700;
+}
+.sidebar .aside-social-nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 0;
+	margin-top: 107px;
+}
+.sidebar .aside-social-nav a{
+	/* margin-top: 107px; */
+	text-decoration: none;
+margin: 10px;
+font-size: 23px;
+height: 50px;
+width: 50px;
+border-radius: 50px;
+line-height: 50px;
+text-align: center;
+color: white;
+border: 1px solid white;
+
+}
+
+/* gallery images */
+.article h1{
+	text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    /* padding: 10px; */
+    margin: 30px 0;
+}
+.cards
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.img-gallery{
+	/* flex: 0 1 20%; */
+	flex: 0 1 48%;
+	margin: 10px;
+	/* margin: 5px; */
+}
+.cards img{
+	width: 100%;
+}
+.flex-main
+{
+	display: flex;
+	justify-content: space-between;
+}
