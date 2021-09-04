@@ -113,9 +113,9 @@ height: 50px;
 width: 50px;
 border-radius: 50px;
 line-height: 50px;
-box-shadow: 1px 4px 2px 2px #dcdde1;
+/* box-shadow: 1px 4px 2px 2px #dcdde1; */
 text-align: center;
-color: #bdc3c7;
+color: #34495e;
 }
 .header-bac
 {
