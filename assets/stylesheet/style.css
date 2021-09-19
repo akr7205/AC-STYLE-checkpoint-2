@@ -69,6 +69,9 @@ table {
 {
     flex-wrap: wrap;
 }
+a{
+	text-decoration: none;
+}
 .padding
 {
 	padding: 90px 0;
@@ -304,7 +307,7 @@ hr
 }
 .col-1-2{
     /* width: 48%; */
-	flex: 0 1 40%;
+	flex: 0 1 47%;
 }
 .design .flex
 {
@@ -413,8 +416,11 @@ hr
     text-decoration: none;
     font-size: 24px;
 }
-
+/* gallery page  */
 /* gallery */
+.gallery-header{
+	padding-top: 10px;
+}
 .sidebar
 {
 	background-color: #e74c3c;
@@ -429,37 +435,37 @@ hr
 .article
 {
 	/* flex: 0 1 60%; */
-	flex: 0 1 64%;
+	flex: 0 1 69%;
 	overflow: auto;
     height: 100vh;
 }
-.asidecontent{
+/* .asidecontent{
 	margin-top: 178px;
-}
+} */
 .brand
 {
 	display: flex;
     justify-content: center;
     align-items: center;
 	/* margin-right: 154px; */
-	margin-right: 85px;
+	/* margin-right: 85px; */
 }
 .header a{
 	text-decoration: none;
 }
 
+
 .brand img{
 	width: 100%;
 }
 .brand .brand-h{
-	font-size: 60px;
+	font-size: 30px;
     color: #fff;
-    margin: ;
     padding: 18px;
     font-weight: 700;
 }
 .nav{
-	/* margin-right: 129px; */
+	margin-right: 60px;
 font-size: 24px;
 color: #fff;
 border: 1px solid white;
@@ -473,18 +479,25 @@ border-radius: 5px;
 .sidebar .heading{
 		text-decoration: none;
 		color: #fff;
-		padding: 10px;
+		padding: 7px 21px;
+       width: 80%;
+      margin: 0 auto;
+	  font-size: 30px;
 }
 .sidebar .text{
-    padding: 10px;
+    padding: 5px;
     font-weight: 700;
+	margin: 0 auto;
+	width: 75%;
 }
 .sidebar .aside-social-nav{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	padding: 25px 0;
-	margin-top: 107px;
+	margin-left: 56px;
+	padding: 10px 8px;
+	/* padding: 25px 0;
+	margin-top: 107px; */
 }
 .sidebar .aside-social-nav a{
 	/* margin-top: 107px; */
@@ -528,4 +541,10 @@ border: 1px solid white;
 {
 	display: flex;
 	justify-content: space-between;
+}
+/* changes later on gallery */
+
+.gallery-brand img{
+	width: 28%;
+    margin-left: 23px;
 }
