@@ -116,7 +116,6 @@ height: 50px;
 width: 50px;
 border-radius: 50px;
 line-height: 50px;
-/* box-shadow: 1px 4px 2px 2px #dcdde1; */
 text-align: center;
 color: #34495e;
 }
@@ -125,6 +124,7 @@ color: #34495e;
 	background-color: #ecf0f1;
 	position: sticky;
     top: 0;
+	bottom: 750px;
 }
 .header-bac a{
 	text-decoration: none;
@@ -159,6 +159,7 @@ color: #34495e;
 {
 	padding: 120px 0;
 	text-align: center;
+	text-transform: uppercase;
 }
 .content h1{
 	font-size: 55px;
@@ -273,7 +274,6 @@ hr
 {
 	width: 100%;
     border-radius: 8px;
-    border: 3px solid #22396a;
     height: 378px;
     object-fit: cover;
 }
@@ -299,11 +299,13 @@ hr
 {
 	font-size: 30px;
     font-weight: 400;
+	font-style: italic;
 }
 .design p{
 	font-size: 23px;
 	font-weight: 300;
 	color: grey;
+	font-style: italic;
 }
 .col-1-2{
     /* width: 48%; */
@@ -522,20 +524,26 @@ border: 1px solid white;
     /* padding: 10px; */
     margin: 30px 0;
 }
-.cards
+/* gallery page image */
+.galleryflex
 {
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
 	align-items: flex-start;
 }
-.img-gallery{
-
-	flex: 0 1 47%;
-	margin: 10px;
-	/* margin: 5px; */
+.imgcol
+{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 17px;
 }
-.cards img{
+.imgcol img{
 	width: 100%;
+	margin-bottom: 30px;
+    border: 3px solid #433535;
 }
 .flex-main
 {
